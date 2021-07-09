@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    padding:100px;
+}
+.heading{
+    margin:50px 0px!important;
+}
+.bank-parent{
+    box-shadow: 5px 5px 10px gray;
+    padding: 40px;
+    border-radius:10px;
+}
+.new-page{
+    display:none;
+}
+.common{
+    padding:40px 30px;
+    margin:20px;
+    border-radius:5px;
+}
+.deposit{
+    background-color:rgb(107, 7, 85);
+}
+.withdraw{
+    background-color:rgb(231, 79, 24);
+}
+.balance{
+    background-color:rgb(17, 10, 29);
+}
+.common h2,h5{
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.deposits{
+    box-shadow: 8px 8px 20px gray;
+
+}
+.withdraws{
+    box-shadow: 8px 8px 20px gray;
+}
+.input-sec{
+    margin-top:50px;
+}
