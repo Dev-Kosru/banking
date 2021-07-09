@@ -16,11 +16,17 @@ let btn2 = document.getElementById('button-2');
         let depositamount = document.getElementById('depositAmount').value;
         let adddeposit = parseFloat(depositamount);
     
-        let currentdeposit = document.getElementById('current-deposit').innerText;
-        let addcurrentdeposit = parseFloat(currentdeposit);
-        let totaldeposit = adddeposit + addcurrentdeposit;
-       document.getElementById('current-deposit').innerText = totaldeposit;
-       document.getElementById('depositAmount').value = "";
+       totalamounts("current-blance",adddeposit);
+       totalamounts("current-deposit",adddeposit);
+         document.getElementById('depositAmount').value = "";
       
 })
+
+function totalamounts (id,adddeposit){
+    let blances=document.getElementById(id).innerText;
+    let addblances = parseFloat(blances);
+    let totalblance = adddeposit+addblances;
+
+    document.getElementById(id).innerText =totalblance;
+}
 
