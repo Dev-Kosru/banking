@@ -43,6 +43,9 @@ function getInput(){
 let btn1 = document.getElementById("button");
 btn1.addEventListener('click',function(){
  let withdrawAmount= getInput('withdrawAmount');
- console.log(withdrawAmount);
+ totalamounts("current-withdraw",withdrawAmount);
+ totalamounts("current-blance",-1 * withdrawAmount);
+ document.getElementById("withdrawAmount").value="";
+ 
 })
   
